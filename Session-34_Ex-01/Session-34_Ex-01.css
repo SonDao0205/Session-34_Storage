@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+.container {
+    margin: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    padding: 20px;
+    
+}
+
+h2{
+    text-align: center;
+}
+
+label{
+    text-align: left;
+}
+
+p{
+    display: none;
+    color: red;
+}

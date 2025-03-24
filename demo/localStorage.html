@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const user = {
+            id: 1,
+            name:`Sơn Đào`,
+            age:18
+        }
+            
+        // Thêm dữ liệu
+        localStorage.setItem(`number`,`10`)
+        localStorage.setItem(`userName`,`Nguyễn Văn Nam`)
+
+        // Lưu dữ liệu với dạng Object
+        localStorage.setItem("user",JSON.stringify(user))
+
+        // Lấy dữ liệu từ localStorage
+        const userLocal = localStorage.getItem("user")
+        console.log(userLocal);
+
+        // Convert kiểu JSON thành kiểu dữ liệu của js
+        const convert = JSON.parse(userLocal)
+        console.log(convert);
+        
+        // Xoá 1 key trên local
+        localStorage.removeItem("number")
+
+        // Clean local (Hay được áp dụng sau khi đăng xuất)
+        localStorage.clear()
+    </script>
+</body>
+</html>
