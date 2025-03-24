@@ -17,4 +17,5 @@ formElement.addEventListener("submit",(event)=>{
         return;
     }
     alert("Đăng nhập thành công!");
+    window.location.href = "https://www.lazada.vn/?spm=a2o4n.homepage.header.dhome.2ef63bdcKzK8RV#?";
 })
